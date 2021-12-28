@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .button{
+      position: fixed;
+     right: 50px;
+      bottom: 50px;
+      box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.3) ; 
+      border-radius: 3px;
+      padding: 10px;
+      display: none;
+    }
+    .button.show{
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <div class="button">点击我返回</div>
+</body>
+<script>
+  let $button=document.querySelector('.button')
+  window.onscroll=function(){
+    if (window.scrollY>150) {
+      $button.classList.add('show')
+
+    }else{
+      $button.classList.remove('show')
+    }
+    $button.onclick=function(){
+      window.scrollTo({
+        top:0,
+        behavior:'smooth'
+      })
+    }
+  }
+</script>
+</html>
